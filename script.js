@@ -10,25 +10,41 @@ window.location.href="index2.html"
 }
 else{
 document.getElementById('email').style.display='flex'
-}
-}
 
-const myone=()=>{
-  
 setTimeout(form,1000)
 setTimeout(myload)
 
-
 }
+}
+
+// const myone=()=>{
+  
+// setTimeout(form,1000)
+// setTimeout(myload)
+
+
+// }
 
 
 const form=()=>{
-  document.getElementById('first').style.display='flex'
+  document.getElementById('mainid').style.display='flex'
 }
 
 const myload=()=>{
   document.getElementById(`loading`).style.display=`flex`
-  document.getElementById('btn1').style.display='none'
+  document.getElementById('first').style.display='none'
   
 }
 
+
+const Verify=()=>{
+  if(localStorage.auth){
+    window.location.href="index2.html"
+  }
+  else{
+ 
+  }
+  
+  }
+  
+  Verify()
